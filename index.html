@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffff;
+            --green: #04fa46;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .tribute-container {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .tribue-img {
+            margin-right: 20px;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border: var(--green) solid 2px;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .project {
+            color: var(--white);
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content {
+            flex-grow: 1;
+            text-align: justify;
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color:var(--green);
+            color: var(--black);
+            padding: 7px;
+            margin-top: 5px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+         @media (max-width: 768px) {
+            
+            .tribute-container {
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .tribue-img {
+                margin-right: 20px;
+                margin-bottom: 0;
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .content, p , title {
+                max-width: 100%;
+                overflow-x: hidden;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tribute-container">
+        <div class="tribue-img">
+            <img src="img/ElonMusk.png" alt="Elon Musk">
+            <p class="project">Elon @ SpaceX</p>
+        </div>
+        <div class="content">
+            <h1 class="title">Elon Musk</h1>
+            <p>Elon Musk, born in Pretoria, South Africa, is one of the most successful entrepreneurs of all time. Musk
+                has achieved
+                global fame as the chief executive officer (CEO) of electric automobile maker Tesla (TSLA) and the
+                private space company
+                SpaceX. Musk was an early investor in several tech companies, and in October 2022, he completed a deal
+                to take X
+                (formerly Twitter) private. His success and personal style have given rise to comparisons to other colorful tycoons from U.S. history, including
+                Steve Jobs, Howard Hughes, and Henry Ford. He was named the richest person in the world in 2021, surpassing Amazon
+                (AMZN) founder Jeff Bezos. Musk is the richest person in the world as of Feb. 15, 2024.</p>
+            <a href="https://www.investopedia.com/articles/personal-finance/061015/how-elon-musk-became-elon-musk.asp" target="_blank"><button>Read more</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
